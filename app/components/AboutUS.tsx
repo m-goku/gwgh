@@ -19,7 +19,7 @@ const AboutUS = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Who We Are
             </h2>
-            <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+            <p className="mb-6 font-light text-lg text-gray-500 md:text-lg dark:text-gray-400">
               Green World Initiative is a nonprofit organization dedicated to
               restoring the planet through reforestation and sustainable
               agriculture. We work hand-in-hand with local communities to plant

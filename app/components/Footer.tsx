@@ -2,27 +2,40 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white  m-4 dark:bg-gray-800">
-      <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-lime-900 sm:text-center dark:text-lime-700">
-          © 2023{" "}
+    <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+      <div className="mx-auto max-w-screen-xl text-center">
+        <p className="my-6 text-md text-lime-900 dark:text-lime-400">
+          Email: info@greenworldgh.com
+        </p>
+        {/* <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+          <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6">
+              What We Do
+            </a>
+          </li>
+          <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="#" className="mr-4 hover:underline md:mr-6">
+              Contact
+            </a>
+          </li>
+        </ul> */}
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          © 2025{" "}
           <a href="#" className="hover:underline">
             Green World Initiative
           </a>
           . All Rights Reserved.
         </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-          <li>
-            <a href="#" className="hover:underline me-4 md:me-6">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:underline">
-              Contact
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
   );

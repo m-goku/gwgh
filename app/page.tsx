@@ -7,6 +7,7 @@ import WhatWeDo from "./components/WhatWeDo";
 import FeatureSection from "./components/FeatureSection";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
   return (
