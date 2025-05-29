@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUS = () => {
+const WhatWeDo = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
@@ -11,10 +11,10 @@ const AboutUS = () => {
             alt="dashboard image"
           />
           {/* <img
-          className="w-full hidden dark:block"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
-          alt="dashboard image"
-        /> */}
+            className="w-full hidden dark:block"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+            alt="dashboard image"
+          /> */}
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Let's create more tools and ideas that brings us together.
@@ -49,4 +49,4 @@ const AboutUS = () => {
   );
 };
 
-export default AboutUS;
+export default WhatWeDo;

@@ -4,10 +4,10 @@ const HeroSection = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
-        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="grid max-w-screen-xl px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-2 lg:grid-cols-12">
           <div className=" lg:mt-0 lg:col-span-5 lg:flex mr-5">
             <img
-              src="https://res.cloudinary.com/dk7kt9wth/image/upload/v1748511404/2151064509_vytbyl.jpg"
+              src="https://res.cloudinary.com/dk7kt9wth/image/upload/v1748517471/Untitled_design_mfutt4.png"
               alt="mockup"
             />
           </div>

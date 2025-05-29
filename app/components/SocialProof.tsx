@@ -9,7 +9,7 @@ const SocialProof = () => {
             <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
               150,000+
             </dt>
-            <dd className="font-light text-xl text-gray-500 dark:text-gray-400">
+            <dd className="font-light text-xl text-lime-800 dark:text-lime-800">
               Trees Planted
             </dd>
           </div>
@@ -17,13 +17,13 @@ const SocialProof = () => {
             <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
               200+ Acres
             </dt>
-            <dd className="font-light text-xl text-gray-500 dark:text-gray-400">
+            <dd className="font-light text-xl text-lime-800 dark:text-lime-800">
               Crops Cultivated
             </dd>
           </div>
           <div className="flex flex-col items-center justify-center">
             <dt className="mb-2 text-3xl md:text-4xl font-extrabold">50+</dt>
-            <dd className="font-light text-xl text-gray-500 dark:text-gray-400">
+            <dd className="font-light text-xl text-lime-800 dark:text-lime-800">
               Communities Impacted
             </dd>
           </div>
