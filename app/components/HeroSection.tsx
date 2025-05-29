@@ -15,7 +15,7 @@ const HeroSection = () => {
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
               Grow Forests. Feed Communities. Change the World.
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className="max-w-2xl mb-6 font-light text-lg text-gray-500 lg:mb-8 md:text-xl lg:text-xl dark:text-gray-400">
               Green World Initiative plants trees and crops to fight
               deforestation, restore ecosystems, and support local livelihoods.
               Be part of the solution.
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 <path
                   fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </a>
