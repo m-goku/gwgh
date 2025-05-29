@@ -6,6 +6,7 @@ import AboutUS from "./components/AboutUS";
 import WhatWeDo from "./components/WhatWeDo";
 import FeatureSection from "./components/FeatureSection";
 import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
 
 export default function Home() {
   return (
@@ -18,8 +19,10 @@ export default function Home() {
           <AboutUS />
           <FeatureSection />
           <WhatWeDo />
+          <Gallery />
         </main>
       </div>
+
       <Footer />
     </>
   );

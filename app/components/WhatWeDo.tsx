@@ -17,18 +17,23 @@ const WhatWeDo = () => {
           /> */}
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Let's create more tools and ideas that brings us together.
+              What We Do
             </h2>
             <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-              Flowbite helps you connect with friends and communities of people
-              who share your interests. Connecting with your friends and family
-              as well as discovering new ones is easy with features like Groups.
+              At Green World Initiative, we lead grassroots efforts to restore
+              the environment through tree planting and sustainable crop
+              cultivation. Our work focuses on reforesting degraded lands,
+              promoting agroforestry, and engaging local communities in hands-on
+              conservation. We don’t just plant trees we grow ecosystems,
+              strengthen food security, and build environmental awareness from
+              the ground up. Through education, collaboration, and long-term
+              care, we turn barren land into thriving, life-giving landscapes.
             </p>
             <a
               href="#"
-              className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
+              className="inline-flex items-center text-white bg-lime-700 hover:bg-lime-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
             >
-              Get started
+              Read More
               <svg
                 className="ml-2 -mr-1 w-5 h-5"
                 fill="currentColor"
