@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
-        <div className="grid max-w-screen-xl px-4  mx-auto lg:gap-8 xl:gap-0 lg:py-2 lg:grid-cols-12">
+        <div className="grid max-w-screen-xl   mx-auto lg:gap-8 xl:gap-0  lg:grid-cols-12">
           <div className=" lg:mt-0 lg:col-span-5 lg:flex mr-5">
             <img
               src="https://res.cloudinary.com/dk7kt9wth/image/upload/v1748517471/Untitled_design_mfutt4.png"

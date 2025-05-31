@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <div>
-      <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className="bg-white dark:bg-gray-900 fixed mb-10 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -52,7 +52,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="/"
-                  className="block py-2 px-3 text-white bg-lime-700 rounded-sm md:bg-transparent md:text-lime-700 md:p-0 md:dark:text-lime-500"
+                  className="block py-2 px-3 text-white font-bold bg-lime-700 rounded-sm md:bg-transparent md:text-lime-700 md:p-0 md:dark:text-lime-500"
                   aria-current="page"
                 >
                   Home
@@ -60,24 +60,41 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="/"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/who-we-are"
+                  className="block py-2 px-3 text-gray-700 font-bold rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  About
+                  Who We Are
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/what-we-do"
+                  className="block py-2 px-3 text-gray-700 font-bold rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Services
+                  What We Do
+                </a>
+              </li>
+              {/* <li>
+                <a
+                  href="/our-projects"
+                  className="block py-2 px-3 text-gray-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Projects
+                </a>
+              </li> */}
+
+              <li>
+                <a
+                  href="/gallery"
+                  className="block py-2 px-3 text-gray-700 font-bold rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Gallery
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="/contact-us"
+                  className="block py-2 px-3 text-gray-700 font-bold rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-lime-700 md:p-0 md:dark:hover:text-lime-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contact
                 </a>
