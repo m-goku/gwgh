@@ -7,7 +7,7 @@ const AboutUS = () => {
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
             className="w-full dark:hidden"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+            src="https://res.cloudinary.com/dk7kt9wth/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1748989945/2148761770_x3mwf6.jpg"
             alt="dashboard image"
           />
           {/* <img
@@ -30,7 +30,7 @@ const AboutUS = () => {
               generations to come.
             </p>
             <a
-              href="#"
+              href="/who-we-are"
               className="inline-flex items-center text-white bg-lime-700 hover:bg-lime-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900"
             >
               Read More
