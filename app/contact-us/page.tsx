@@ -47,7 +47,7 @@ const page = () => {
                 htmlFor="message"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
               >
-                Your message
+                Please Type Your message
               </label>
               <textarea
                 id="message"
