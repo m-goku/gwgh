@@ -9,7 +9,7 @@ type LabelValueProps = {
 function LabelValue({ label, value, color }: LabelValueProps) {
   return (
     <div className="flex justify-between mb-5 w-full">
-      <span className="text-gray-900  font-medium">{label}</span>
+      <span className="text-gray-900 text-sm font-medium">{label}</span>
       <span className={`${color} text-lg font-semibold`}>{value}</span>
     </div>
   );
