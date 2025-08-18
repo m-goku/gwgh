@@ -104,13 +104,13 @@ const Page = () => {
         <h2 className="text-xl font-semibold mb-6">Zones</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
           <a href="/dashboard/zones/wa">
-            <Card value="WA" />
+            <Card value="WA" icon={"../gps.png"} />
           </a>
           <a href="/dashboard/zones/yendi">
-            <Card value="YENDI" />
+            <Card value="YENDI" icon={"../gps.png"} />
           </a>
           <a href="/dashboard/zones/sissala">
-            <Card value="SISSALA" />
+            <Card value="SISSALA" icon={"../gps.png"} />
           </a>
         </div>
       </div>

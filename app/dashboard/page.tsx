@@ -106,16 +106,19 @@ const Page = () => {
       <div className="p-4 sm:ml-64">
         <h2 className="text-xl font-semibold mb-6 text-green-900">General</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
-          {/* Card 1 */}
-
-          <Card label="Total Pre-Finance" value="1,000,000" />
-
-          {/* Card 2 */}
-          <Card label="Total Kg" value="10,000" />
-
-          {/* Card 3 */}
-          <Card label="Total Value" value="250,000" />
-          <Card label="Total Farmers" value="6723" />
+          <Card
+            label="Total Pre-Finance"
+            value="100,000,000"
+            icon={"../prefinance.png"}
+          />
+          <Card
+            label="Total Kg"
+            value="10,000"
+            icon={"../weighing-machine.png"}
+          />
+          <Card label="Total Value" value="250,000" icon={"../money.png"} />
+          <Card label="Total Farmers" value="6723" icon={"../farmer.png"} />
+          <Card label="Recovery Rate" value="20%" icon={"../give-money.png"} />
         </div>
       </div>
     </div>
