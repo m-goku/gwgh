@@ -1,5 +1,6 @@
 "use client";
 
+import Card from "@/app/components/Analytics/Card";
 import React, { useEffect } from "react";
 
 const Page = () => {
@@ -100,30 +101,17 @@ const Page = () => {
       </aside>
 
       <div className="p-4 sm:ml-64">
+        <h2 className="text-xl font-semibold mb-6">Zones</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
-          {/* Card 1 */}
-          <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center h-[30vh] md:h-[50vh]">
-            <h2 className="text-xl font-semibold mb-2">Card One</h2>
-            <p className="text-gray-600 text-center">
-              This is the first card content.
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center h-[30vh] md:h-[50vh]">
-            <h2 className="text-xl font-semibold mb-2">Card Two</h2>
-            <p className="text-gray-600 text-center">
-              This is the second card content.
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center h-[30vh] md:h-[50vh]">
-            <h2 className="text-xl font-semibold mb-2">Card Three</h2>
-            <p className="text-gray-600 text-center">
-              This is the third card content.
-            </p>
-          </div>
+          <a href="/dashboard/zones/wa">
+            <Card value="WA" />
+          </a>
+          <a href="/dashboard/zones/yendi">
+            <Card value="YENDI" />
+          </a>
+          <a href="/dashboard/zones/sissala">
+            <Card value="SISSALA" />
+          </a>
         </div>
       </div>
     </div>

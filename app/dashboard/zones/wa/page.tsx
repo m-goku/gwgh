@@ -1,5 +1,6 @@
 "use client";
 
+import Card from "@/app/components/Analytics/Card";
 import React, { useEffect } from "react";
 
 const Page = () => {
@@ -34,7 +35,7 @@ const Page = () => {
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <a href="#" className="flex items-center ps-2.5 mb-5">
-            <img src="../gwi.png" alt="Farmer" width={40} height={50} />
+            <img src="../../gwi.png" alt="Farmer" width={40} height={50} />
             <span className="self-center ml-5 text-xl font-semibold whitespace-nowrap dark:text-white">
               Dashboard
             </span>
@@ -100,7 +101,14 @@ const Page = () => {
       </aside>
 
       <div className="p-4 sm:ml-64">
-        <h2 className="text-xl font-semibold mb-6">Communities</h2>
+        <h2 className="text-xl font-semibold mb-6 text-green-900">WA</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
+          <Card label="Total Pre-Finance" value="1,000,000" />
+          <Card label="Total Kg" value="10,000" />
+          <Card label="Total Amount" value="10,000" />
+          <Card label="Total Farmers" value="250,000" />
+          <Card label="Total Communities" value="6723" />
+        </div>
       </div>
     </div>
   );
