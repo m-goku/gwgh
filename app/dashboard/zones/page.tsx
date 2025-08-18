@@ -72,7 +72,7 @@ const Page = () => {
               Dashboard
             </span>
           </a>
-          <ul className="space-y-2 font-medium">
+          <ul className="space-y-2 pl-3 font-medium">
             <li>
               <a
                 href="/dashboard"
