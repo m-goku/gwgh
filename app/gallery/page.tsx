@@ -1,6 +1,7 @@
 import React from "react";
 import Gap from "../components/Gap";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
@@ -56,6 +57,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
