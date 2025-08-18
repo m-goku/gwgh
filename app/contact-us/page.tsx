@@ -1,9 +1,11 @@
 import React from "react";
 import Gap from "../components/Gap";
+import NavBar from "../components/NavBar";
 
 const page = () => {
   return (
     <div>
+      <NavBar />
       <Gap />
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-28 px-4 mx-auto max-w-screen-md">

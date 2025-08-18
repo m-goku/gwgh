@@ -1,9 +1,11 @@
 import React from "react";
 import Gap from "../components/Gap";
+import NavBar from "../components/NavBar";
 
 const page = () => {
   return (
     <div>
+      <NavBar />
       <Gap />
       <Gap />
       <div className="grid grid-cols-2 lg:py-28 md:grid-cols-4 gap-4">

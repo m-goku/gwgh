@@ -9,14 +9,7 @@ const NavBar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            {/* <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
-            /> */}
-            <span className="self-center text-3xl font-semibold whitespace-nowrap text-lime-800 dark:text-white">
-              GWI
-            </span>
+            <img src="gwi.png" alt="Farmer" width={50} height={50} />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
