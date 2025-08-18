@@ -1,9 +1,40 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../components/Analytics/Card";
+import MainCard from "../components/Analytics/MainCard";
 
 const Page = () => {
+  type LabelValueProps = {
+    totalFarmers: number;
+    totalPrefinance: number;
+    totalKgBrought: number;
+    totalAmount: number;
+    recoveryRate: number;
+  };
+
+  const [stats, setStats] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const res = await fetch(
+          "https://analytics-ubus.onrender.com/api/general"
+        ); // adjust to your backend URL
+        const data = await res.json();
+        setStats(data);
+        console.log(stats);
+      } catch (error) {
+        console.error("Error fetching stats:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
   return (
     <div>
       <button
@@ -34,10 +65,7 @@ const Page = () => {
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center ps-2.5 mb-5"
-          >
+          <a href="#" className="flex items-center ps-2.5 mb-5">
             <img src="gwi.png" alt="Farmer" width={40} height={50} />
             <span className="self-center ml-5 text-xl font-semibold whitespace-nowrap dark:text-white">
               Dashboard
@@ -80,7 +108,7 @@ const Page = () => {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a
                 href="/dashboard/communities"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -98,15 +126,15 @@ const Page = () => {
                   Communities
                 </span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </aside>
 
       <div className="p-4 sm:ml-64">
         <h2 className="text-xl font-semibold mb-6 text-green-900">General</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
-          <Card
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 md:w-2xl max-w-6xl mt-5">
+          {/* <Card
             label="Total Pre-Finance"
             value="100,000,000"
             icon={"../prefinance.png"}
@@ -118,7 +146,9 @@ const Page = () => {
           />
           <Card label="Total Value" value="250,000" icon={"../money.png"} />
           <Card label="Total Farmers" value="6723" icon={"../farmer.png"} />
-          <Card label="Recovery Rate" value="20%" icon={"../give-money.png"} />
+          <Card label="Recovery Rate" value="20%" icon={"../give-money.png"} /> */}
+          {loading && <h1>Loading...</h1>}
+          {!loading && <MainCard value={stats} />}
         </div>
       </div>
     </div>

@@ -1,9 +1,41 @@
 "use client";
 
 import Card from "@/app/components/Analytics/Card";
-import React, { useEffect } from "react";
+import MainCard from "@/app/components/Analytics/MainCard";
+import React, { useEffect, useState } from "react";
 
 const Page = () => {
+  const [wa, setWa] = useState(null);
+  const [yendi, setYendi] = useState(null);
+  const [sissala, setSissala] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const wa = await fetch(
+          "https://analytics-ubus.onrender.com/api/general/zone/WA"
+        ); // adjust to your backend URL
+        const Wa = await wa.json();
+        setWa(Wa);
+        const yendi = await fetch(
+          "https://analytics-ubus.onrender.com/api/general/zone/YENDI"
+        ); // adjust to your backend URL
+        const Yendi = await yendi.json();
+        setYendi(Yendi);
+        const sissala = await fetch(
+          "https://analytics-ubus.onrender.com/api/general/zone/SISSALA"
+        ); // adjust to your backend URL
+        const Sissala = await sissala.json();
+        setSissala(Sissala);
+      } catch (error) {
+        console.error("Error fetching stats:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStats();
+  }, []);
   return (
     <div>
       <button
@@ -77,7 +109,7 @@ const Page = () => {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a
                 href="/dashboard/communities"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -95,23 +127,18 @@ const Page = () => {
                   Communities
                 </span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </aside>
 
       <div className="p-4 sm:ml-64">
         <h2 className="text-xl font-semibold mb-6">Zones</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl mt-5">
-          <a href="/dashboard/zones/wa">
-            <Card value="WA" icon={"../gps.png"} />
-          </a>
-          <a href="/dashboard/zones/yendi">
-            <Card value="YENDI" icon={"../gps.png"} />
-          </a>
-          <a href="/dashboard/zones/sissala">
-            <Card value="SISSALA" icon={"../gps.png"} />
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 md:w-2xl max-w-6xl mt-5">
+          {loading && <h1>Loading...</h1>}
+          {!loading && <MainCard value={wa} title="WA" />}
+          {!loading && <MainCard value={yendi} title="YENDI" />}
+          {!loading && <MainCard value={sissala} title="SISSALA" />}
         </div>
       </div>
     </div>
