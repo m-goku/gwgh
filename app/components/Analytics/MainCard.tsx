@@ -9,7 +9,7 @@ type LabelValueProps = {
 function LabelValue({ label, value, color }: LabelValueProps) {
   return (
     <div className="flex justify-between mb-5 w-full">
-      <span className="text-gray-900 text-md font-medium">{label}</span>
+      <span className="text-gray-900  font-medium">{label}</span>
       <span className={`${color} text-lg font-semibold`}>{value}</span>
     </div>
   );
@@ -21,7 +21,7 @@ const MainCard = ({ value, title }: { value: any; title?: string }) => {
       <h1 className="mb-5 font-bold text-green-900">{title}</h1>
       <LabelValue
         label={"Total Pre-Finance (GH₵)"}
-        value={value?.totalPrefinance.toLocaleString()}
+        value={`${value?.totalPrefinance.toLocaleString()}.00`}
         color="text-orange-500"
       />
       <LabelValue
