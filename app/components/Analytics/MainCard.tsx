@@ -1,4 +1,5 @@
 import React from "react";
+import PieChart from "./PieChart";
 
 type LabelValueProps = {
   label: string;
@@ -8,20 +9,20 @@ type LabelValueProps = {
 
 function LabelValue({ label, value, color }: LabelValueProps) {
   return (
-    <div className="flex justify-between mb-5 w-full">
+    <div className="flex justify-between mb-2 w-full">
       <span className="text-gray-900 text-sm font-medium">{label}</span>
-      <span className={`${color} text-lg font-semibold`}>{value}</span>
+      <span className={`${color} text-md font-semibold`}>{value}</span>
     </div>
   );
 }
 
 const MainCard = ({ value, title }: { value: any; title?: string }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 flex-col justify-between   ">
+    <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col justify-center items-center">
       <h1 className="mb-5 font-bold text-green-900">{title}</h1>
       <LabelValue
         label={"Total Pre-Finance (GH₵)"}
-        value={`${value?.totalPrefinance.toLocaleString()}.00`}
+        value={`${value?.totalPrefinance.toLocaleString()}`}
         color="text-orange-500"
       />
       <LabelValue
@@ -44,6 +45,12 @@ const MainCard = ({ value, title }: { value: any; title?: string }) => {
         value={`${Number(value?.recoveryRate).toFixed(2)}%`}
         color="text-green-900"
       />
+      <div className="w-100 h-100">
+        <PieChart
+          labels={["Pre-Finance", "Recovered"]}
+          values={[value?.totalPrefinance, value?.totalAmount]}
+        />
+      </div>
     </div>
   );
 };
