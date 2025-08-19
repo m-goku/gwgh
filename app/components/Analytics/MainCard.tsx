@@ -19,7 +19,7 @@ function LabelValue({ label, value, color }: LabelValueProps) {
 const MainCard = ({ value, title }: { value: any; title?: string }) => {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col justify-center items-center">
-      <h1 className="mb-5 font-bold text-green-900">{title}</h1>
+      <h1 className="mb-5 font-bold text-xl text-green-900">{title}</h1>
       <LabelValue
         label={"Total Pre-Finance (GH₵)"}
         value={`${value?.totalPrefinance.toLocaleString()}`}
