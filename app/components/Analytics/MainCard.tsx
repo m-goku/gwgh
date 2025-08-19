@@ -22,7 +22,10 @@ const MainCard = ({ value, title }: { value: any; title?: string }) => {
       <h1 className="mb-5 font-bold text-xl text-green-900">{title}</h1>
       <LabelValue
         label={"Total Pre-Finance (GH₵)"}
-        value={`${value?.totalPrefinance.toFixed(2).toLocaleString()}`}
+        value={`${value?.totalPrefinance
+          .toLocaleString()
+          .toFixed(2)
+          .toLocaleString()}`}
         color="text-orange-500"
       />
       <LabelValue
@@ -32,7 +35,7 @@ const MainCard = ({ value, title }: { value: any; title?: string }) => {
       />
       <LabelValue
         label={"Total Value (GH₵)"}
-        value={value?.totalAmount.toFixed(2).toLocaleString()}
+        value={value?.totalAmount.toLocaleString().toFixed(2)}
         color="text-green-500"
       />
       <LabelValue
